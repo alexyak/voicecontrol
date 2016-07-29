@@ -1,5 +1,5 @@
 # Module: Voice Control 
-The `voicecontrol` module allows to use voice control of the MagicMirror.
+The `voicecontrol` module allows to use voice control in the MagicMirror.
 This module based on the https://snowboy.kitt.ai/
 
 ## Using the module
