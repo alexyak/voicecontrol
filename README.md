@@ -31,3 +31,18 @@ modules: [
 ]
 ````
 
+When a command is detected a notification message is send with sendNotification to every other module. You will need to subscribe for a specific type of message in your module:
+
+````javascript
+
+ notificationReceived: function(notification, payload, sender) {
+		if (notification === "PLAY_MUSIC"){
+			this.media.play();
+		}
+
+        if (notification === "STOP_MUSIC"){
+			this.media.pause();
+		}
+	},
+
+````
