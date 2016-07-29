@@ -2,7 +2,9 @@
 The `voicecontrol` module allows to use voice control in the MagicMirror.
 This module based on the https://snowboy.kitt.ai/. The snowboy.kitt has a few dependencies which you can install running this command line on your raspberry pi:
 
+````javascript
 sudo apt-get install python-pyaudio python3-pyaudio sox
+````
 
 
 ## Using the module
