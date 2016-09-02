@@ -10,7 +10,7 @@ sudo apt-get install python-pyaudio python3-pyaudio sox
 ## Using the module
 
 In order to use this module you should create a trained model for each command/keyword at https://snowboy.kitt.ai/. 
-Download the model and copy it into the root of the MagicMirror directory.
+Download the model and copy it into the root of the MagicMirror directory. Besides recognizing the voice commands the module could display a list of commands on the mirror.
 
 
 To use this module, add it to the modules array in the `config/config.js` file with the following settings:
@@ -18,15 +18,18 @@ To use this module, add it to the modules array in the `config/config.js` file w
 modules: [
 	{
 			module: 'voicecontrol',
+			position: 'bottom_left',
 			config: {
 				models: [
 					{
 						keyword: "playMusic",   // keyword 
+						description: "Say 'Play Music' to start playing",
 						file: "playMusic.pmdl", // trained model file name
 						message: "PLAY_MUSIC"   // notification message that's broadcast in the MagicMirror app
 					},
 					{
 						keyword: "stopMusic",
+						description: "Say 'Stop Music' to stop playing",
 						file: "stopMusic.pmdl",
 						message: "STOP_MUSIC"
 					},
